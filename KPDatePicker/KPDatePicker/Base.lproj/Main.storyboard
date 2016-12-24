@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="KPDatePicker" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2t7-nk-e6u">
+                                <rect key="frame" x="111" y="101" width="153" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="2Xi-5q-z4b"/>
+                                </constraints>
+                                <state key="normal" title="Show Date Picker"/>
+                                <connections>
+                                    <action selector="showDatePicker:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5t4-2d-Ynr"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZYT-FS-7qQ">
+                                <rect key="frame" x="0.0" y="199" width="375" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="eds-fT-A3h"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="ZYT-FS-7qQ" secondAttribute="trailing" id="NyC-6O-ObS"/>
+                            <constraint firstItem="ZYT-FS-7qQ" firstAttribute="top" secondItem="2t7-nk-e6u" secondAttribute="bottom" constant="68" id="QmP-i2-h3e"/>
+                            <constraint firstItem="2t7-nk-e6u" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="111" id="ZZi-vg-s7K"/>
+                            <constraint firstItem="ZYT-FS-7qQ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="iWd-Mg-m1V"/>
+                            <constraint firstAttribute="trailing" secondItem="2t7-nk-e6u" secondAttribute="trailing" constant="111" id="qyw-aA-0pS"/>
+                            <constraint firstItem="2t7-nk-e6u" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="81" id="xwk-Ux-cUq"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="selectedValueLabel" destination="ZYT-FS-7qQ" id="S7v-xo-SYJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="138.98050974512745"/>
+        </scene>
+    </scenes>
+</document>
